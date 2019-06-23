@@ -971,8 +971,9 @@ function initialize()
 	//objectLoader.load( "models/gold-star.json", function ( obj ) {
 		
 		myObj1 = obj1;
-		obj1.scale.set(0.2,0.2,0.2);
+		obj1.scale.set(0.5,0.5,0.5);
 		obj1.position.y += 1.0;
+		obj1.position.z = 7;
 		obj1.rotation.z += 110;
 		obj1.rotation.x += 90;
 		markerRoot1.add( obj1 );
@@ -1072,9 +1073,12 @@ var mainLoop = () => {
   renderer.render(scene, camera)
   console.log("funciona mainloop")
   var time = performance.now() * 0.001;
+  var orbitRadius = 8;
+  var orbitRadius1 = 2;
   myObj1.rotation.x += Math.PI / 180
   //myObj1.rotation.y += Math.PI / 180
-  myObj1.rotation.y += Math.PI / 180
+  myObj1.position.y = orbitRadius * -Math.cos( time );
+  //myObj1.rotation.y += Math.PI / 180
   myObj1.position.z = Math.sin( time ) * 5 + 0.5;
   //myObj1.rotation.x = time * 0.5;
   //myObj1.rotation.z = time * 0.51;
