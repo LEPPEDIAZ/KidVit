@@ -1,0 +1,118 @@
+{
+    "geometries": [{
+        "type": "Geometry",
+        "data": {
+            "name": "Cube_001Geometry",
+            "influencesPerVertex": 2,
+            "faces": [42,3,2,0,0,0,1,2,0,1,2,42,7,6,2,0,0,1,2,3,4,1,42,5,4,6,0,0,1,2,5,6,4,42,1,0,4,0,0,1,2,7,2,6,42,2,6,4,0,0,1,2,1,4,6,42,7,3,1,0,0,1,2,3,0,7,42,1,3,0,0,3,0,2,7,0,2,42,3,7,2,0,3,0,2,0,3,1,42,7,5,6,0,3,0,2,3,5,4,42,5,1,4,0,3,0,2,5,7,6,42,0,2,4,0,3,0,2,2,1,6,42,5,7,1,0,3,0,2,5,3,7],
+            "morphTargets": [],
+            "vertices": [-1,1,-1,-1,-1,-1,-1,1,1,-1,-1,1,1,1,-1,1,-1,-1,1,1,1,1,-1,1],
+            "bones": [],
+            "uvs": [[1,0,1,1,0,1,0,0]],
+            "normals": [-0.577349,-0.577349,0.577349,-0.577349,0.577349,0.577349,-0.577349,0.577349,-0.577349,0.577349,-0.577349,0.577349,0.577349,0.577349,0.577349,0.577349,-0.577349,-0.577349,0.577349,0.577349,-0.577349,-0.577349,-0.577349,-0.577349],
+            "skinWeights": [],
+            "skinIndices": [],
+            "animations": [],
+            "metadata": {
+                "version": 3,
+                "uvs": 1,
+                "faces": 12,
+                "materials": 1,
+                "normals": 8,
+                "morphTargets": 0,
+                "vertices": 8,
+                "generator": "io_three",
+                "bones": 0
+            }
+        },
+        "materials": [{
+            "shading": "phong",
+            "depthTest": true,
+            "specularCoef": 50,
+            "DbgColor": 15658734,
+            "mapDiffuseRepeat": [1,1],
+            "transparent": false,
+            "depthWrite": true,
+            "colorSpecular": [0.1,0.1,0.1],
+            "mapDiffuse": "woodfloor.jpg",
+            "mapDiffuseAnisotropy": 1,
+            "colorAmbient": [1,1,1],
+            "colorDiffuse": [1,1,1],
+            "mapDiffuseWrap": ["RepeatWrapping","RepeatWrapping"],
+            "blending": "NormalBlending",
+            "colorEmissive": [0,0,0],
+            "doubleSided": true,
+            "wireframe": false,
+            "DbgIndex": 0,
+            "opacity": 1,
+            "DbgName": "Material_009",
+            "visible": true
+        }],
+        "uuid": "48190D3D-2648-3533-88FC-9AB8E0770756"
+    }],
+    "images": [{
+        "name": "woodfloor.jpg",
+        "url": "woodfloor.jpg",
+        "uuid": "8819ABFB-5516-31FB-9CD0-ABC0F5E77038"
+    }],
+    "materials": [{
+        "name": "Material_009",
+        "depthTest": true,
+        "emissive": 0,
+        "ambient": 16777215,
+        "color": 16777215,
+        "depthWrite": true,
+        "map": "6902660F-CF2C-3F9D-B522-77FA018A6478",
+        "vertexColors": false,
+        "shininess": 50,
+        "uuid": "D62D7AE0-7F8B-3369-9919-F6F1C7D145CA",
+        "blending": "NormalBlending",
+        "type": "MeshPhongMaterial",
+        "specular": 1644825,
+        "side": 2
+    }],
+    "textures": [{
+        "name": "woodfloor_jpg",
+        "wrap": [1000,1000],
+        "magFilter": 1006,
+        "anisotropy": 1,
+        "uuid": "6902660F-CF2C-3F9D-B522-77FA018A6478",
+        "mapping": 300,
+        "repeat": [1,1],
+        "minFilter": 1008,
+        "image": "8819ABFB-5516-31FB-9CD0-ABC0F5E77038"
+    }],
+    "animations": [{
+        "tracks": [],
+        "name": "default",
+        "fps": 29
+    }],
+    "object": {
+        "type": "Scene",
+        "matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+        "children": [{
+            "name": "floor_jsfbx",
+            "uuid": "FCF50D83-5DC4-3AB9-A3DA-EEB9C9E05A95",
+            "matrix": [-1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1],
+            "visible": true,
+            "type": "Object",
+            "children": [{
+                "name": "Cube_001",
+                "uuid": "537B3F72-2300-3B2C-90AD-165C42B3A4F0",
+                "matrix": [12.5,0,0,0,0,-0,-0.5,0,0,12.5,-2e-06,0,0,0,-0.5,1],
+                "visible": true,
+                "type": "Mesh",
+                "material": "D62D7AE0-7F8B-3369-9919-F6F1C7D145CA",
+                "castShadow": true,
+                "receiveShadow": true,
+                "geometry": "48190D3D-2648-3533-88FC-9AB8E0770756"
+            }]
+        }],
+        "uuid": "CAF0E572-376B-4601-86C6-EE71DF9E7DB7"
+    },
+    "metadata": {
+        "type": "Object",
+        "version": 4.4,
+        "generator": "io_three"
+    }
+}

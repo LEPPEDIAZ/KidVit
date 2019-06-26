@@ -1030,6 +1030,20 @@ function initialize()
 		obj7.position.x = -0.87;
 		markerRoot1.add( obj7 );
 	} );
+	var objecttwoLoader8 = new THREE.ObjectLoader();
+	objecttwoLoader8.load( "models/floor.json", function ( obj8 ) {
+	//objectLoader.load( "models/gold-star.json", function ( obj ) {
+		myObj8 = obj8;
+		obj8.scale.set(0.25,0.25,0.25);
+		obj8.rotation.z += 110;
+		obj8.rotation.x += 90;
+		obj8.rotation.y += 110;
+		obj8.position.z += 1.85;
+		obj8.position.y = -0.8;
+		obj8.position.x = -0.87;
+		markerRoot1.add( obj8 );
+	} );
+	
 	var objecttwoLoader1 = new THREE.ObjectLoader();
 	objecttwoLoader1.load( "models/cherry.json", function ( obj1 ) {
 	//objectLoader.load( "models/gold-star.json", function ( obj ) {
