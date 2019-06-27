@@ -953,15 +953,15 @@ function initialize()
 	**/
 
 	var objecttwoLoader = new THREE.ObjectLoader();
-	objecttwoLoader.load( "models/canon/canon.json", function ( obj ) {
+	objecttwoLoader.load( "models/canon3.json", function ( obj ) {
 	//objectLoader.load( "models/gold-star.json", function ( obj ) {
 		
 		myObj = obj;
-		obj.scale.set(0.22,0.28,0.29);
+		obj.scale.set(0.0009,0.0009,0.0009);
 		obj.rotation.z += 110;
 		obj.rotation.x += 90;
-		obj.rotation.y += 89.5;
 		obj.position.z += 2.3;
+		obj.position.x += 0.5;
 		markerRoot1.add( obj );
 	} );
 	/*
