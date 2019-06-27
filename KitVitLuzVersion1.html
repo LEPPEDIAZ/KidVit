@@ -957,7 +957,7 @@ function initialize()
 	//objectLoader.load( "models/gold-star.json", function ( obj ) {
 		
 		myObj = obj;
-		obj.scale.set(0.25,0.28,0.29);
+		obj.scale.set(0.22,0.28,0.29);
 		obj.rotation.z += 110;
 		obj.rotation.x += 90;
 		obj.rotation.y += 89.5;
@@ -1031,9 +1031,13 @@ function initialize()
 	} );
 	var objecttwoLoader8 = new THREE.ObjectLoader();
 	objecttwoLoader8.load( "models/floor.json", function ( obj8 ) {
+        obj8.traverse( function ( child ) {
+			if ( child instanceof THREE.Mesh )
+			child.material = new THREE.MeshLambertMaterial({color: 0x50A6F4});
+});
 	//objectLoader.load( "models/gold-star.json", function ( obj ) {
 		myObj8 = obj8;
-		obj8.scale.set(0.25,0.25,0.25);
+		obj8.scale.set(0.5,0.5,0.5);
 		obj8.rotation.z += 110;
 		obj8.rotation.x += 90;
 		obj8.rotation.y += 110;
@@ -1061,7 +1065,10 @@ function initialize()
 	var objecttwoLoader9 = new THREE.ObjectLoader();
 	objecttwoLoader9.load( "models/53mm-screw-in-plug.json", function ( obj9 ) {
 	//objectLoader.load( "models/gold-star.json", function ( obj ) {
-		
+		obj9.traverse( function ( child ) {
+			if ( child instanceof THREE.Mesh )
+			child.material = new THREE.MeshLambertMaterial({color: 0x6AA84F});
+});
 		myObj9 = obj9;
 		obj9.scale.set(0.04,0.04,0.04);
 		obj9.rotation.z += 110;
